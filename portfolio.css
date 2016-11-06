@@ -28,6 +28,12 @@ header {
 	background-color: white;
 }
 
+/* #title {
+	width: 42%;
+	margin: auto;
+	background-color: white;
+} */
+
 header h1, header h2 {
     display: inline;
     margin: 20px;
@@ -62,7 +68,11 @@ h3 {
 	padding: 10px;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
 	clear: both;
+	width: 90%;
+	
 }
 
 .center {
@@ -89,33 +99,65 @@ h3 {
 		background-color: rgb(47, 158, 74);
 	}
 
+.icons {
+	width: 50px;
+	display: inline;
+	vertical-align: middle;
+}
+
+.page-heading h2 {
+	display: inline;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
 /*Home Page*/
 
 #cover {
 	width: 100%;
-	margin: auto;
+    margin: auto;
+    text-align: center;
+}
+
+#cover a {
+	text-decoration: none;
+	color: black;
+}
+
+#cover h2 {
+	display: inline;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+.cover-box .icons {
+	width: 50px;
+	display: inline;
+	vertical-align: middle;
 }
 
 .cover-box{
 	width: 30%;
-	margin: 20px;
-	display: inline-block;
+    margin: 20px;
+    display: inline-block;
 }
 
 .cover-box img {
-	max-width: 90%;
-	margin: auto;
+	max-width: 80%;
+	margin: 10px auto 0px auto;
 	display: block;
 	text-align: center;
 }
 
-/*Bio Page*/
-#about img {
+/*About Page*/
+
+#headshot{
 	border-radius: 100%;
     height: 180px;
     float: left;
     margin: 0px 10px;
 }
+
 
 /*Portfolio Page*/
 
@@ -152,11 +194,24 @@ h3 {
 /*Media Queries - change layout depending on user screen-size*/
 
 @media(max-width: 875px) {
+	/* header {
+		background-image: url('images/travel-banner.jpg');
+		background-repeat: no-repeat;
+		background-position: left top;
+	}
+	
+	#title {
+		width: 70%;
+		margin: auto;
+		background-color: white;
+	} */
+	
 	.grid-box {	/*displays two side-by-side*/
-    width: 40%;
-    height: 40%;
-}
-
+		width: 40%;
+		height: 40%;
+	}
+	
+	
 @media(max-width: 650px) {
 	header {
 		position: static; 
@@ -182,6 +237,13 @@ h3 {
 	
 	#cover {
 		margin-top: 20px;
+	}
+	
+	.cover-box {
+		width: 90%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	.grid-box { /*displays 1*/
