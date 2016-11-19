@@ -25,11 +25,10 @@ header {
 	background-color: white;
 }
 
-/* #title {
-	width: 42%;
-	margin: auto;
-	background-color: white;
-} */
+a {
+	text-decoration: none;
+	color: rgb(47, 158, 74);
+}
 
 header h1, header h2 {
     display: inline;
@@ -38,7 +37,7 @@ header h1, header h2 {
 
 header a {
 	text-decoration: none;
-	color: rgb(164, 198, 42);
+	color: rgb(30, 122, 78);
 }
 
 body {
@@ -60,7 +59,7 @@ h3 {
 }
 
 .white {
-	background-color: rgba(255, 255, 255, 0.75);
+	background-color: rgba(255, 255, 255, 0.85);
 	padding: 10px;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -190,7 +189,7 @@ h3 {
 	border-radius: 2px;
 	vertical-align: top;
 	padding: 10px;
-	min-height: 500px;
+	min-height: 350px;
 }
 
 /*Contact Page*/
@@ -204,15 +203,6 @@ h3 {
 	color: rgb(47, 158, 74);
 	font-size: 1.5em;
 	font-weight: bold;
-}
-
-#contact a {
-	text-decoration: none;
-	color: black;
-}
-
-#contact a:visited {
-	color: rgb(47, 158, 74);
 }
 
 /*Media Queries - change layout depending on user screen-size*/
